@@ -24,4 +24,3 @@ yarn-error.log*
 
 # Custom configs
 /.cache
-package-lock.json
