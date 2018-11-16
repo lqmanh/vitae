@@ -1,16 +1,10 @@
 import React from 'react'
-import styled from 'styled-components'
 
-import Box from '../common/box'
+import { ColoredBox } from '../common/box'
 
 
-const Section = (props) => (
-  <Box className={props.className} id={props.id} width='100vw' height={props.height}>
+export default (props) => (
+  <ColoredBox id={props.id} color='#d32f2f' width='100%' height={props.height}>
     {props.children}
-  </Box>
+  </ColoredBox>
 )
-
-
-export default styled(Section)`
-  background-color: #d32f2f;
-`

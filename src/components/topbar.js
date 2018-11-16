@@ -3,10 +3,10 @@ import React from 'react'
 
 export default (props) => {
   const sections = [
-    {name: 'Profile'},
-    {name: 'Education'},
-    {name: 'Skills'},
-    {name: 'Projects'},
+    { name: 'Profile' },
+    { name: 'Skills' },
+    { name: 'Achievements' },
+    { name: 'Projects' },
   ]
   return (
     <nav className='navbar navbar-expand-sm navbar-light bg-light fixed-top shadow'>
@@ -22,5 +22,5 @@ export default (props) => {
         }</div>
       </div>
     </nav>
-  )  
+  )
 }

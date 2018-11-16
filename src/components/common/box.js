@@ -18,9 +18,20 @@ const Box = (props) => {
   )
 }
 
-
-export default styled(Box)`
-  background-color: lightgray;
+const StyledBox = styled(Box)`
+  border-radius: ${(props) => props.borderRadius};
   height: ${(props) => props.height};
   width: ${(props) => props.width};
 `
+
+const ColoredBox = styled(StyledBox)`
+  background-color: ${(props) => props.color || 'gray'};
+`
+
+const PaddinglessBox = styled(StyledBox)`
+  padding: 0;
+`
+
+
+export default StyledBox
+export { ColoredBox, PaddinglessBox }
