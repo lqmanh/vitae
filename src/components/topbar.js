@@ -9,7 +9,7 @@ export default (props) => {
     { name: 'Projects' },
   ]
   return (
-    <nav className='navbar navbar-expand-sm navbar-light bg-light fixed-top shadow'>
+    <nav className='navbar navbar-expand-md navbar-light bg-light fixed-top shadow'>
       <a className='navbar-brand mb-0 h1' href='#top'>
         <strong>VITAE</strong>
       </a>
