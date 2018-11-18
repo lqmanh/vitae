@@ -7,22 +7,20 @@ import Box, { ColoredPaddinglessBox } from '../common/box'
 import ContentFrame from '../common/content-frame'
 
 
-const langs = [[
-  { x: 'C++', y: 15 },
-  { x: 'CSS', y: 55 },
-  { x: 'HTML', y: 60 },
-  { x: 'Javascript', y: 60 },
-  { x: 'Python', y: 80 },
+const fields = [[
+  { x: 'Database (MongoDB)', y: 85 },
+  { x: 'Network Monitoring (Icinga2+SNMP)', y: 35 },
+  { x: 'Web Backend (Node.js)', y: 60 },
+  { x: 'Web Crawling (Scrapy)', y: 75 },
+  { x: 'Web Frontend (React+Bootstrap)', y: 80 },
 ]]
 
-const frameworks = [[
-  { x: 'Bootstrap (CSS)', y: 90 },
-  { x: 'Click (Py)', y: 70 },
-  { x: 'Next.js (JS)', y: 70 },
-  { x: 'Node.js + Express (JS)', y: 55 },
-  { x: 'Passport + JWT (JS)', y: 30 },
-  { x: 'React (JS)', y: 85 },
-  { x: 'Scrapy (Py)', y: 75 }
+const langs = [[
+  { x: 'C++', y: 15 },
+  { x: 'CSS', y: 65 },
+  { x: 'HTML', y: 70 },
+  { x: 'Javascript', y: 70 },
+  { x: 'Python', y: 80 },
 ]]
 
 
@@ -57,15 +55,15 @@ const Chart = (props) => (
   </>
 )
 
-const LanguagesChart = (props) => <Chart data={langs} caption='Languages' />
+const FieldsChart = (props) => <Chart data={fields} caption='Fields with Major Tools I Use' />
 
-const FrameworksChart = (props) => <Chart data={frameworks} caption='Frameworks & Libraries' />
+const LanguagesChart = (props) => <Chart data={langs} caption='Languages' />
 
 const Body = (props) => (
   <ColoredPaddinglessBox borderRadius='1rem' color='#f8f9fa' width='100%' height='100%'>
     <Carousel autoplay={true} autoplayInterval='5000' disableKeyboardControls={true} wrapAround={true}>
+      <FieldsChart />
       <LanguagesChart />
-      <FrameworksChart />
     </Carousel>
   </ColoredPaddinglessBox>
 )
