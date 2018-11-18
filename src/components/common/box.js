@@ -12,7 +12,7 @@ const Box = (props) => {
   else distributeY = 'align-items-center'
 
   return (
-    <div className={`d-flex p-3 ${distributeX} ${distributeY} ${props.className}`} id={props.id}>
+    <div className={`d-flex ${distributeX} ${distributeY} ${props.className}`} id={props.id}>
       {props.children}
     </div>
   )
@@ -21,6 +21,7 @@ const Box = (props) => {
 const StyledBox = styled(Box)`
   border-radius: ${(props) => props.borderRadius};
   height: ${(props) => props.height};
+  padding: 1rem;
   width: ${(props) => props.width};
 `
 
@@ -28,6 +29,14 @@ const ColoredBox = styled(StyledBox)`
   background-color: ${(props) => props.color || 'gray'};
 `
 
+const PaddinglessBox = styled(StyledBox)`
+  padding: 0;
+`
+
+const ColoredPaddinglessBox = styled(ColoredBox)`
+  padding: 0;
+`
+
 
 export default StyledBox
-export { ColoredBox }
+export { ColoredBox, PaddinglessBox, ColoredPaddinglessBox }

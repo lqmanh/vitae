@@ -5,7 +5,7 @@ import { storiesOf } from '@storybook/react'
 
 import Box, { ColoredBox } from '../components/common/box'
 import ContentFrame from '../components/common/content-frame'
-import Section, { Intro, Profile } from '../components/section'
+import Section, { Intro, Profile, Skills } from '../components/section'
 import TopBar from '../components/topbar'
 
 
@@ -44,3 +44,6 @@ storiesOf('App/sections/Intro')
 
 storiesOf('App/sections/Profile')
   .add('without props', () => <Profile />)
+
+storiesOf('App/sections/Skills')
+  .add('without props', () => <Skills />)
