@@ -20,6 +20,7 @@ const langs = [[
   { x: 'CSS', y: 65 },
   { x: 'HTML', y: 70 },
   { x: 'Javascript', y: 70 },
+  { x: 'Markdown', y: 95 },
   { x: 'Python', y: 80 },
 ]]
 
@@ -32,7 +33,7 @@ const SideBar = (props) => (
 
 const Chart = (props) => (
   <>
-    <h2 className='text-center' style={{ paddingTop: 32 }}>{props.caption}</h2>
+    <h2 className='text-center pt-3'>{props.caption}</h2>
     <V.VictoryChart polar>
       <V.VictoryGroup color='#d32f2f' style={{ data: { fillOpacity: 1 } }}>{
         props.data.map((item, i) => <V.VictoryArea key={i} data={item} />)
@@ -70,7 +71,7 @@ const Body = (props) => (
 
 
 export default (props) => (
-  <Section id='Skills'>
+  <Section id='skills'>
     <div className='container container-fluid'>
       <ContentFrame sideBar={<SideBar />} body={<Body />} />
     </div>

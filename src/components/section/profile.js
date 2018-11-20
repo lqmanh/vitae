@@ -25,7 +25,7 @@ const SideBar = (props) => (
 
 const Body = (props) => (
   <ColoredBox borderRadius='1rem' color='#f8f9fa' width='100%' height='100%'>
-    <div className='p-3'>
+    <div>
       <h2>About me</h2>
       <dl className="row mb-0">{
         info.map((field) => (
@@ -41,7 +41,7 @@ const Body = (props) => (
 
 
 export default (props) => (
-  <Section id='Profile'>
+  <Section id='profile'>
     <div className='container container-fluid'>
       <ContentFrame sideBar={<SideBar />} body={<Body />} />
     </div>
