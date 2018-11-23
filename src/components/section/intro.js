@@ -12,7 +12,7 @@ const logos = [
 
 
 export default (props) => (
-  <Section id='Intro' height='calc(100vh - 56px)'>
+  <Section id='intro' height='calc(100vh - 56px)'>
     <div className='text-center text-light'>
       <div className='row py-3'>
         <div className='col'>

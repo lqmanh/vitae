@@ -3,7 +3,7 @@ import Carousel from 'nuka-carousel'
 import * as V from 'victory'
 
 import Section from './section'
-import Box, { ColoredPaddinglessBox } from '../common/box'
+import Box, { ColoredBox } from '../common/box'
 import ContentFrame from '../common/content-frame'
 
 
@@ -20,19 +20,20 @@ const langs = [[
   { x: 'CSS', y: 65 },
   { x: 'HTML', y: 70 },
   { x: 'Javascript', y: 70 },
+  { x: 'Markdown', y: 95 },
   { x: 'Python', y: 80 },
 ]]
 
 
 const SideBar = (props) => (
-  <Box className='p-5 p-md-3'>
-    <h1 className='text-light m-0'>SKILLS</h1>
+  <Box className='px-0 pr-md-3' distributeX='right'>
+    <h1 className='text-light mb-0'>SKILLS</h1>
   </Box>
 )
 
 const Chart = (props) => (
   <>
-    <h2 className='text-center' style={{ paddingTop: 32 }}>{props.caption}</h2>
+    <h3 className='text-center pt-3'>{props.caption}</h3>
     <V.VictoryChart polar>
       <V.VictoryGroup color='#d32f2f' style={{ data: { fillOpacity: 1 } }}>{
         props.data.map((item, i) => <V.VictoryArea key={i} data={item} />)
@@ -60,17 +61,17 @@ const FieldsChart = (props) => <Chart data={fields} caption='Fields with Major T
 const LanguagesChart = (props) => <Chart data={langs} caption='Languages' />
 
 const Body = (props) => (
-  <ColoredPaddinglessBox borderRadius='1rem' color='#f8f9fa' width='100%' height='100%'>
+  <ColoredBox borderRadius='1rem' color='#f8f9fa' padding='0' width='100%' height='100%'>
     <Carousel autoplay={true} autoplayInterval='5000' disableKeyboardControls={true} wrapAround={true}>
       <FieldsChart />
       <LanguagesChart />
     </Carousel>
-  </ColoredPaddinglessBox>
+  </ColoredBox>
 )
 
 
 export default (props) => (
-  <Section id='Skills'>
+  <Section id='skills'>
     <div className='container container-fluid'>
       <ContentFrame sideBar={<SideBar />} body={<Body />} />
     </div>

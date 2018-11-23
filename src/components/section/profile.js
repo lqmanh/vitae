@@ -18,15 +18,15 @@ const info = [
 
 
 const SideBar = (props) => (
-  <Box className='p-5 p-md-3'>
+  <Box className='pl-md-0'>
     <img className='rounded-circle' src={avatarImg} alt='Avatar' width='100%' height='100%' />
   </Box>
 )
 
 const Body = (props) => (
   <ColoredBox borderRadius='1rem' color='#f8f9fa' width='100%' height='100%'>
-    <div className='p-3'>
-      <h2>About me</h2>
+    <div>
+      <h3>About me</h3>
       <dl className="row mb-0">{
         info.map((field) => (
           <>
@@ -41,7 +41,7 @@ const Body = (props) => (
 
 
 export default (props) => (
-  <Section id='Profile'>
+  <Section id='profile'>
     <div className='container container-fluid'>
       <ContentFrame sideBar={<SideBar />} body={<Body />} />
     </div>
