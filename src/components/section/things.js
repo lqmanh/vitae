@@ -51,7 +51,7 @@ const things = [
 ]
 
 const SideBar = (props) => (
-  <Box className='p-5 p-md-3'>
+  <Box className='px-0 pr-md-3' distributeX='right'>
     <h1 className='d-block text-light text-truncate mb-0'>THINGS I USE</h1>
   </Box>
 )

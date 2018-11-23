@@ -26,7 +26,7 @@ const langs = [[
 
 
 const SideBar = (props) => (
-  <Box className='p-5 p-md-3'>
+  <Box className='px-0 pr-md-3' distributeX='right'>
     <h1 className='text-light mb-0'>SKILLS</h1>
   </Box>
 )

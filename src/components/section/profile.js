@@ -18,7 +18,7 @@ const info = [
 
 
 const SideBar = (props) => (
-  <Box className='p-5 p-md-3'>
+  <Box className='pl-md-0'>
     <img className='rounded-circle' src={avatarImg} alt='Avatar' width='100%' height='100%' />
   </Box>
 )

@@ -12,7 +12,7 @@ const Box = (props) => {
   else distributeY = 'align-items-center'
 
   return (
-    <div className={`d-flex ${props.padding ? '' : 'p-3 p-md-4'} ${distributeX} ${distributeY} ${props.className}`}
+    <div className={`d-flex ${distributeX} ${distributeY} ${props.className}`}
       id={props.id}
     >
       {props.children}
@@ -23,7 +23,7 @@ const Box = (props) => {
 const StyledBox = styled(Box)`
   border-radius: ${(props) => props.borderRadius};
   height: ${(props) => props.height};
-  padding: ${(props) => props.padding};
+  padding: ${(props) => props.padding || '1rem'};
   width: ${(props) => props.width};
 `
 
