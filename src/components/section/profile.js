@@ -26,7 +26,7 @@ const SideBar = (props) => (
 const Body = (props) => (
   <ColoredBox borderRadius='1rem' color='#f8f9fa' width='100%' height='100%'>
     <div>
-      <h2>About me</h2>
+      <h3>About me</h3>
       <dl className="row mb-0">{
         info.map((field) => (
           <>

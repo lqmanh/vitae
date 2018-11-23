@@ -3,7 +3,7 @@ import Carousel from 'nuka-carousel'
 import * as V from 'victory'
 
 import Section from './section'
-import Box, { ColoredPaddinglessBox } from '../common/box'
+import Box, { ColoredBox } from '../common/box'
 import ContentFrame from '../common/content-frame'
 
 
@@ -27,13 +27,13 @@ const langs = [[
 
 const SideBar = (props) => (
   <Box className='p-5 p-md-3'>
-    <h1 className='text-light m-0'>SKILLS</h1>
+    <h1 className='text-light mb-0'>SKILLS</h1>
   </Box>
 )
 
 const Chart = (props) => (
   <>
-    <h2 className='text-center pt-3'>{props.caption}</h2>
+    <h3 className='text-center pt-3'>{props.caption}</h3>
     <V.VictoryChart polar>
       <V.VictoryGroup color='#d32f2f' style={{ data: { fillOpacity: 1 } }}>{
         props.data.map((item, i) => <V.VictoryArea key={i} data={item} />)
@@ -61,12 +61,12 @@ const FieldsChart = (props) => <Chart data={fields} caption='Fields with Major T
 const LanguagesChart = (props) => <Chart data={langs} caption='Languages' />
 
 const Body = (props) => (
-  <ColoredPaddinglessBox borderRadius='1rem' color='#f8f9fa' width='100%' height='100%'>
+  <ColoredBox borderRadius='1rem' color='#f8f9fa' padding='0' width='100%' height='100%'>
     <Carousel autoplay={true} autoplayInterval='5000' disableKeyboardControls={true} wrapAround={true}>
       <FieldsChart />
       <LanguagesChart />
     </Carousel>
-  </ColoredPaddinglessBox>
+  </ColoredBox>
 )
 
 
