@@ -8,17 +8,17 @@ import ContentFrame from '../common/content-frame'
 
 
 const fields = [[
-  { x: 'Database (MongoDB)', y: 85 },
+  { x: 'Database (MongoDB)', y: 80 },
   { x: 'Network Monitoring (Icinga2+SNMP)', y: 35 },
-  { x: 'Web Backend (Node.js)', y: 60 },
+  { x: 'Web Backend (Node.js+Express)', y: 50 },
   { x: 'Web Crawling (Scrapy)', y: 75 },
   { x: 'Web Frontend (React+Bootstrap)', y: 80 },
 ]]
 
 const langs = [[
   { x: 'C++', y: 15 },
-  { x: 'CSS', y: 65 },
-  { x: 'HTML', y: 70 },
+  { x: 'CSS', y: 70 },
+  { x: 'HTML', y: 75 },
   { x: 'Javascript', y: 70 },
   { x: 'Markdown', y: 95 },
   { x: 'Python', y: 80 },

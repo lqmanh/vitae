@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Layout from './components/layout'
-import { Intro, Profile, Skills, Achievements, ThingsIUse } from './components/section'
+import { Intro, Profile, Skills, Achievements, ThingsIUse, Projects } from './components/section'
 
 
 export default (props) => (
@@ -11,5 +11,6 @@ export default (props) => (
     <Skills />
     <Achievements />
     <ThingsIUse />
+    <Projects />
   </Layout>
 )
