@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "alias": "lqmanh",
+  "builds": [
+    { "src": "package.json", "use": "@now/static-build" }
+  ],
+  "github": {
+    "enabled": true,
+    "autoAlias": true,
+    "silent": true
+  }
+}
