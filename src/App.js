@@ -9,7 +9,7 @@ export default (props) => (
     <Intro />
     <Profile />
     <Skills />
-    <Achievements />
+    {/* <Achievements /> */}
     <ThingsIUse />
     <Projects />
   </Layout>
