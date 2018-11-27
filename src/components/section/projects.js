@@ -11,6 +11,12 @@ const projects = [
     name: 'My Projects',
     value: [
       {
+        name: 'directory-stat',
+        description: 'Directory statistics.',
+        url: 'https://www.npmjs.com/package/directory-stat',
+        status: 'Active'
+      },
+      {
         name: 'shirt_crawler',
         description: 'Crawl shirt information from Amazon, Shopify,...',
         url: 'https://github.com/lqmanh/shirt_crawler',
@@ -19,7 +25,7 @@ const projects = [
       {
         name: 'Vitae',
         description: 'Personal digital CV and more.',
-        url: 'http://lqmanh.now.sh/',
+        url: 'http://lqmanh.now.sh',
         status: 'Active'
       },
       {
@@ -48,7 +54,7 @@ const projects = [
       {
         name: 'Albert',
         description: 'URL shortener.',
-        url: 'https://albert-demo.herokuapp.com/',
+        url: 'https://albert-demo.herokuapp.com',
         status: 'Discontinued'
       },
     ]
@@ -98,10 +104,10 @@ const Body = (props) => (
               type.value.map((project) => (
                 <li>
                   <Link href={project.url}>{project.name}</Link>
-                  &nbsp;-&nbsp;
-                  {project.description}
                   &nbsp;&nbsp;
                   <span className='badge badge-secondary'>{project.status}</span>
+                  <br />
+                  {project.description}
                 </li>
               ))
             }</ol>
