@@ -18,15 +18,15 @@ const things = [
     name: 'Frameworks & Libraries',
     value: [
       'Bootstrap, Bulma (CSS)',
-      'Next.js (JS)',
-      'Node.js + Express (JS)',
-      'React (JS)',
+      'Next.js (Javascript)',
+      'Node.js + Express (Javascript)',
+      'React (Javascript)',
       'Scrapy (Python)',
     ],
-    optional: [
+    optionalValue: [
       'Click (Python)',
-      'Passport + JWT (JS)',
-      'Storybook (JS)',
+      'Passport + JWT (Javascript)',
+      'Storybook (Javascript)',
       'styled-components, styled-jsx (CSS)',
     ]
   },

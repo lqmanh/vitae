@@ -8,7 +8,7 @@ import ContentFrame from '../common/content-frame'
 
 const projects = [
   {
-    name: 'My Projects',
+    name: 'Personal Projects',
     value: [
       {
         name: 'directory-stat',
@@ -37,7 +37,7 @@ const projects = [
       {
         name: 'Showtime',
         description: 'Network monitoring.',
-        url: '',
+        url: null,
         status: 'Coming Soon'
       },
       {

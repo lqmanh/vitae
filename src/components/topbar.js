@@ -2,12 +2,11 @@ import React from 'react'
 
 
 const sections = [
-  { id: 'intro', name: 'Intro' },
   { id: 'profile', name: 'Profile' },
-  { id: 'skills', name: 'Skills' },
-  // { id: 'achievements', name: 'Achievements' },
-  { id: 'things-i-use', name: 'Things I Use' },
+  { id: 'achievements', name: 'Achievements' },
+  { id: 'skills', name: 'Skills & Exp.' },
   { id: 'projects', name: 'Projects' },
+  { id: 'things-i-use', name: 'Things I Use' },
 ]
 
 
@@ -22,7 +21,7 @@ export default (props) => (
     <div className='collapse navbar-collapse' id='navbar-nav'>
       <div className='navbar-nav'>{
         sections.map((sect, i) => (
-          <a className={`nav-item nav-link ${i ? '' : 'active'}`} href={`#${sect.id}`}>
+          <a className={`nav-item nav-link`} href={`#${sect.id}`}>
             {sect.name}
           </a>
         ))

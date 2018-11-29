@@ -27,7 +27,7 @@ const langs = [[
 
 const SideBar = (props) => (
   <Box className='px-0 pr-md-3' distributeX='right'>
-    <h1 className='text-light mb-0'>SKILLS</h1>
+    <h1 className='text-light text-right mb-0'>SKILLS & EXPERIENCE</h1>
   </Box>
 )
 
@@ -56,7 +56,7 @@ const Chart = (props) => (
   </>
 )
 
-const FieldsChart = (props) => <Chart data={fields} caption='Fields with Major Tools I Use' />
+const FieldsChart = (props) => <Chart data={fields} caption='Fields' />
 
 const LanguagesChart = (props) => <Chart data={langs} caption='Languages' />
 
