@@ -12,10 +12,9 @@ const info = [
   { fieldName: 'Hometown', value: 'Hai Duong City' },
   { fieldName: 'Occupation', value: 'Student at the University of Engineering & Technology - Vietnam National University, Hanoi' },
   { fieldName: 'Languages', value: 'Vietnamese, English' },
-  { fieldName: 'Personalities', value: 'Reliable, studious, ambitious,...' },
-  { fieldName: 'Interests', value: 'Technology, manga, music, digital design, photography, cinema,...' },
+  { fieldName: 'Personalities', value: 'Reliable, studious, creative, ambitious,...' },
+  { fieldName: 'Interests', value: 'Technology, music, writing, graphic design, photography, cinema,...' },
 ]
-
 
 const SideBar = (props) => (
   <Box className='pl-md-0'>

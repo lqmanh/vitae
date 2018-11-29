@@ -27,18 +27,14 @@ const SideBar = (props) => (
 
 const Body = (props) => (
   <ColoredBox borderRadius='1rem' color='#f8f9fa' distributeX='left' width='100%' height='100%'>
-    <div className='w-100'>
-      <ul className='list-unstyled'>{
-        achievements.map((type) => (
-          <li className='mb-3'>
-            <h3>{type.name}</h3>
-            <ol>{
-              type.value.map((achiev) => <li>{achiev}</li>)
-            }</ol>
-          </li>
-        ))
-      }</ul>
-    </div>
+    <ul className='list-unstyled mb-0'>{
+      achievements.map((type) => (
+        <li className='mb-3'>
+          <h3>{type.name}</h3>
+          <ol>{type.value.map((achiev) => <li>{achiev}</li>)}</ol>
+        </li>
+      ))
+    }</ul>
   </ColoredBox>
 )
 

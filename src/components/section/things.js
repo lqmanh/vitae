@@ -58,20 +58,17 @@ const SideBar = (props) => (
 
 const Body = (props) => (
   <ColoredBox borderRadius='1rem' color='#f8f9fa' distributeX='left' width='100%' height='100%'>
-    <div className='w-100'>
-      <ul className='list-unstyled'>{
-        things.map((thing) => (
-          <li className='mb-3'>
-            <h3>{thing.name}</h3>
-            <ol>{
-              thing.value.map((item) => <li>{item}</li>)
-            }</ol>
-          </li>
-        ))
-      }</ul>
-    </div>
+    <ul className='list-unstyled mb-0'>{
+      things.map((thing) => (
+        <li className='mb-3'>
+          <h3>{thing.name}</h3>
+          <ol>{thing.value.map((item) => <li>{item}</li>)}</ol>
+        </li>
+      ))
+    }</ul>
   </ColoredBox>
 )
+
 
 export default (props) => (
   <Section id='things-i-use'>

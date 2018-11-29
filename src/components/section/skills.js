@@ -24,7 +24,6 @@ const langs = [[
   { x: 'Python', y: 80 },
 ]]
 
-
 const SideBar = (props) => (
   <Box className='px-0 pr-md-3' distributeX='right'>
     <h1 className='text-light text-right mb-0'>SKILLS & EXPERIENCE</h1>

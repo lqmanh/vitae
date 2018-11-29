@@ -4,7 +4,7 @@ import React from 'react'
 const sections = [
   { id: 'profile', name: 'Profile' },
   { id: 'achievements', name: 'Achievements' },
-  { id: 'skills', name: 'Skills & Exp.' },
+  { id: 'skills', name: 'Skills & Experience' },
   { id: 'projects', name: 'Projects' },
   { id: 'things-i-use', name: 'Things I Use' },
 ]

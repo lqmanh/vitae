@@ -12,37 +12,37 @@ const projects = [
     value: [
       {
         name: 'directory-stat',
-        description: 'Directory statistics.',
+        description: 'Directory statistics',
         url: 'https://www.npmjs.com/package/directory-stat',
         status: 'Active'
       },
       {
         name: 'shirt_crawler',
-        description: 'Crawl shirt information from Amazon, Shopify,...',
+        description: 'Crawl T-shirt information from e-commerce services like Amazon, Shopify,...',
         url: 'https://github.com/lqmanh/shirt_crawler',
         status: 'Active'
       },
       {
         name: 'Vitae',
-        description: 'Personal digital CV and more.',
+        description: 'Personal digital CV and more',
         url: 'http://lqmanh.now.sh',
         status: 'Active'
       },
       {
         name: 'Chamomile',
-        description: 'Personal blog.',
+        description: 'Personal blog',
         url: 'https://github.com/lqmanh/chamomile',
         status: 'Coming Soon'
       },
       {
         name: 'Showtime',
-        description: 'Network monitoring.',
+        description: 'Network monitoring app',
         url: null,
         status: 'Coming Soon'
       },
       {
         name: 'classer',
-        description: 'Classify files into different directories.',
+        description: 'Classify files into different directories',
         url: 'https://github.com/lqmanh/classer',
         status: 'Discontinued'
       },
@@ -53,7 +53,7 @@ const projects = [
     value: [
       {
         name: 'Albert',
-        description: 'URL shortener.',
+        description: 'URL shortener',
         url: 'https://albert-demo.herokuapp.com',
         status: 'Discontinued'
       },
@@ -64,13 +64,13 @@ const projects = [
     value: [
       {
         name: 'sebdah/scrapy-mongodb',
-        description: 'MongoDB pipeline for Scrapy.',
+        description: 'MongoDB pipeline for Scrapy',
         url: 'https://github.com/sebdah/scrapy-mongodb',
         status: 'Active'
       },
       {
         name: 'zeit/now-examples',
-        description: 'Examples of Now deployments.',
+        description: 'Examples of Now deployments you can use',
         url: 'https://github.com/zeit/now-examples',
         status: 'Active'
       },
@@ -95,28 +95,27 @@ const Link = styled.a`
 
 const Body = (props) => (
   <ColoredBox borderRadius='1rem' color='#f8f9fa' distributeX='left' width='100%' height='100%'>
-    <div className='w-100'>
-      <ul className='list-unstyled'>{
-        projects.map((type) => (
-          <li className='mb-3'>
-            <h3>{type.name}</h3>
-            <ol>{
-              type.value.map((project) => (
-                <li>
-                  <Link href={project.url}>{project.name}</Link>
-                  &nbsp;&nbsp;
-                  <span className='badge badge-secondary'>{project.status}</span>
-                  <br />
-                  {project.description}
-                </li>
-              ))
-            }</ol>
-          </li>
-        ))
-      }</ul>
-    </div>
+    <ul className='list-unstyled mb-0'>{
+      projects.map((type) => (
+        <li className='mb-3'>
+          <h3>{type.name}</h3>
+          <ol>{
+            type.value.map((project) => (
+              <li>
+                <Link className='text-monospace' href={project.url}>{project.name}</Link>
+                &nbsp;&nbsp;
+                <span className='badge badge-secondary'>{project.status}</span>
+                <br />
+                {project.description}
+              </li>
+            ))
+          }</ol>
+        </li>
+      ))
+    }</ul>
   </ColoredBox>
 )
+
 
 export default (props) => (
   <Section id='projects'>
