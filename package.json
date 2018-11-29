@@ -24,7 +24,8 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "now-build": "react-scripts build && mv build dist"
+    "now-build": "npm run build",
+    "postnow-build": "mv build dist"
   },
   "eslintConfig": {
     "extends": "react-app"
