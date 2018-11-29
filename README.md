@@ -1,2 +1,4 @@
-# VITAE v0.1.0
-> I, my, me, mine.
+# VITAE v0.1.1
+> I, my, me, mine
+
+Personal digital CV and more
