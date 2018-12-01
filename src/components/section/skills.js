@@ -10,7 +10,7 @@ import ContentFrame from '../common/content-frame'
 const fields = [[
   { x: 'Database (MongoDB)', y: 80 },
   { x: 'Network Monitoring (Icinga2+SNMP)', y: 35 },
-  { x: 'Web Backend (Node.js+Express)', y: 50 },
+  { x: 'Web Backend (Node.js+Express)', y: 55 },
   { x: 'Web Crawling (Scrapy)', y: 75 },
   { x: 'Web Frontend (React+Bootstrap)', y: 80 },
 ]]

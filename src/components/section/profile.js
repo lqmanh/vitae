@@ -10,10 +10,10 @@ const info = [
   { fieldName: 'Full Name', value: 'Lương Quang Mạnh' },
   { fieldName: 'Date of Birth', value: 'May 8, 1998' },
   { fieldName: 'Hometown', value: 'Hai Duong City' },
-  { fieldName: 'Occupation', value: 'Student at the University of Engineering & Technology - Vietnam National University, Hanoi' },
+  { fieldName: 'Occupation', value: 'Student at the University of Engineering & Technology (UET), Vietnam National University (VNU)' },
   { fieldName: 'Languages', value: 'Vietnamese, English' },
   { fieldName: 'Personalities', value: 'Reliable, studious, creative, ambitious,...' },
-  { fieldName: 'Interests', value: 'Technology, music, writing, graphic design, photography, cinema,...' },
+  { fieldName: 'Interests', value: 'Technology, music (especially piano), writing, photography, cinema,...' },
 ]
 
 const SideBar = (props) => (

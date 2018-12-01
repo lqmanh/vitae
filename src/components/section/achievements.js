@@ -9,12 +9,13 @@ const achievements = [
   {
     name: 'Professional',
     value: [
+      'Leader of Albert Team'
     ]
   },
   {
     name: 'Others',
     value: [
-      'Former Vice President of Thuyet Trinh Club - University of Engineering & Technology, VNU'
+      'Former Vice President of Thuyet Trinh Club - UET, VNU'
     ]
   }
 ]
