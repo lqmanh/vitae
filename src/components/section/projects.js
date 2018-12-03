@@ -79,8 +79,8 @@ const projects = [
 ]
 
 const SideBar = (props) => (
-  <Box className='px-0 pr-md-3' distributeX='right'>
-    <h1 className='d-block text-light text-truncate mb-0'>PROJECTS</h1>
+  <Box className='px-0 py-4 pr-md-3' distributeX='right'>
+    <h2 className='d-block text-light text-truncate mb-0'>PROJECTS</h2>
   </Box>
 )
 
@@ -94,11 +94,11 @@ const Link = styled.a`
 `
 
 const Body = (props) => (
-  <ColoredBox borderRadius='1rem' color='#f8f9fa' distributeX='left' width='100%' height='100%'>
+  <ColoredBox className='p-4' borderRadius='1rem' color='#f8f9fa' distributeX='left' width='100%' height='100%'>
     <ul className='list-unstyled mb-0'>{
       projects.map((type) => (
         <li className='mb-3'>
-          <h3>{type.name}</h3>
+          <h4>{type.name}</h4>
           <ol>{
             type.value.map((project) => (
               <li>

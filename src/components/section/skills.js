@@ -10,7 +10,7 @@ import ContentFrame from '../common/content-frame'
 const fields = [[
   { x: 'Database (MongoDB)', y: 80 },
   { x: 'Network Monitoring (Icinga2+SNMP)', y: 35 },
-  { x: 'Web Backend (Node.js+Express)', y: 50 },
+  { x: 'Web Backend (Node.js+Express)', y: 55 },
   { x: 'Web Crawling (Scrapy)', y: 75 },
   { x: 'Web Frontend (React+Bootstrap)', y: 80 },
 ]]
@@ -25,14 +25,14 @@ const langs = [[
 ]]
 
 const SideBar = (props) => (
-  <Box className='px-0 pr-md-3' distributeX='right'>
-    <h1 className='text-light text-right mb-0'>SKILLS & EXPERIENCE</h1>
+  <Box className='px-0 py-4 pr-md-3' distributeX='right'>
+    <h2 className='text-light text-right mb-0'>SKILLS & EXPERIENCE</h2>
   </Box>
 )
 
 const Chart = (props) => (
   <>
-    <h3 className='text-center pt-3'>{props.caption}</h3>
+    <h4 className='text-center pt-4'>{props.caption}</h4>
     <V.VictoryChart polar>
       <V.VictoryGroup color='#d32f2f' style={{ data: { fillOpacity: 1 } }}>{
         props.data.map((item, i) => <V.VictoryArea key={i} data={item} />)
