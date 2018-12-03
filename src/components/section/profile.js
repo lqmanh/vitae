@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 
 import Section from './section'
 import Box, { ColoredBox } from '../common/box'
@@ -10,22 +11,28 @@ const info = [
   { fieldName: 'Full Name', value: 'Lương Quang Mạnh' },
   { fieldName: 'Date of Birth', value: 'May 8, 1998' },
   { fieldName: 'Hometown', value: 'Hai Duong City' },
+  { fieldName: 'Current Address', value: 'Nam Tu Liem District, Ha Noi' },
   { fieldName: 'Occupation', value: 'Student at the University of Engineering & Technology (UET), Vietnam National University (VNU)' },
   { fieldName: 'Languages', value: 'Vietnamese, English' },
   { fieldName: 'Personalities', value: 'Reliable, studious, creative, ambitious,...' },
   { fieldName: 'Interests', value: 'Technology, music (especially piano), writing, photography, cinema,...' },
 ]
 
+const Avatar = styled.img`
+  max-width: 300px;
+  max-height: 300px;
+`
+
 const SideBar = (props) => (
-  <Box className='pl-md-0'>
-    <img className='rounded-circle' src={avatarImg} alt='Avatar' width='100%' height='100%' />
+  <Box className='p-4 pl-md-0'>
+    <Avatar className='rounded-circle' src={avatarImg} alt='Avatar' width='100%' height='100%' />
   </Box>
 )
 
 const Body = (props) => (
-  <ColoredBox borderRadius='1rem' color='#f8f9fa' width='100%' height='100%'>
+  <ColoredBox className='p-4' borderRadius='1rem' color='#f8f9fa' width='100%' height='100%'>
     <div>
-      <h3>About me</h3>
+      <h4>About me</h4>
       <dl className="row mb-0">{
         info.map((field) => (
           <>

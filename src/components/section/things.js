@@ -51,17 +51,17 @@ const things = [
 ]
 
 const SideBar = (props) => (
-  <Box className='px-0 pr-md-3' distributeX='right'>
-    <h1 className='d-block text-light text-truncate mb-0'>THINGS I USE</h1>
+  <Box className='px-0 py-4 pr-md-3' distributeX='right'>
+    <h2 className='d-block text-light text-truncate mb-0'>THINGS I USE</h2>
   </Box>
 )
 
 const Body = (props) => (
-  <ColoredBox borderRadius='1rem' color='#f8f9fa' distributeX='left' width='100%' height='100%'>
+  <ColoredBox className='p-4' borderRadius='1rem' color='#f8f9fa' distributeX='left' width='100%' height='100%'>
     <ul className='list-unstyled mb-0'>{
       things.map((thing) => (
         <li className='mb-3'>
-          <h3>{thing.name}</h3>
+          <h4>{thing.name}</h4>
           <ol>{thing.value.map((item) => <li>{item}</li>)}</ol>
         </li>
       ))
