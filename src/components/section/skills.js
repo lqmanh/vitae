@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 import Carousel from 'nuka-carousel'
 import * as V from 'victory'
 
@@ -20,8 +21,8 @@ const langs = [[
   { x: 'CSS', y: 70 },
   { x: 'HTML', y: 75 },
   { x: 'Javascript', y: 70 },
-  { x: 'Markdown', y: 95 },
   { x: 'Python', y: 80 },
+  { x: 'SQL', y: 55 },
 ]]
 
 const SideBar = (props) => (
@@ -59,9 +60,26 @@ const FieldsChart = (props) => <Chart data={fields} caption='Fields' />
 
 const LanguagesChart = (props) => <Chart data={langs} caption='Languages' />
 
+const SlideButton = styled.button`
+  background-color: rgb(248, 249, 250);
+  border: 0;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  cursor: pointer;
+  :hover {
+    color: rgba(0, 0, 0, 0.7);
+  }
+`
+
+const SlidePrev = ({ previousSlide }) => <SlideButton onClick={previousSlide}><ion-icon name="ios-arrow-back" /></SlideButton>
+
+const SlideNext = ({ nextSlide }) => <SlideButton onClick={nextSlide}><ion-icon name="ios-arrow-forward" /></SlideButton>
+
 const Body = (props) => (
   <ColoredBox borderRadius='1rem' color='#f8f9fa' padding='0' width='100%' height='100%'>
-    <Carousel autoplay={true} autoplayInterval='5000' disableKeyboardControls={true} wrapAround={true}>
+    <Carousel autoplay={true} autoplayInterval='5000' disableKeyboardControls={true} wrapAround={true}
+      renderCenterLeftControls={SlidePrev} renderCenterRightControls={SlideNext}
+    >
       <FieldsChart />
       <LanguagesChart />
     </Carousel>
