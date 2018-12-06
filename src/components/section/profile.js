@@ -11,7 +11,6 @@ const info = [
   { fieldName: 'Full Name', value: 'Lương Quang Mạnh' },
   { fieldName: 'Date of Birth', value: 'May 8, 1998' },
   { fieldName: 'Hometown', value: 'Hai Duong City' },
-  { fieldName: 'Current Address', value: 'Nam Tu Liem District, Ha Noi' },
   { fieldName: 'Occupation', value: 'Student at the University of Engineering & Technology (UET), Vietnam National University (VNU)' },
   { fieldName: 'Languages', value: 'Vietnamese, English' },
   { fieldName: 'Personalities', value: 'Reliable, studious, creative, ambitious,...' },

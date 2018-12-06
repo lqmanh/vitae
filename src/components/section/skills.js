@@ -14,7 +14,7 @@ const fields = [[
   { x: 'Network Monitoring (Icinga2+SNMP)', y: 35 },
   { x: 'Web Backend (Node.js+Express)', y: 55 },
   { x: 'Web Crawling (Scrapy)', y: 75 },
-  { x: 'Web Frontend (React+Bootstrap)', y: 80 },
+  { x: 'Web Frontend (React+Bootstrap)', y: 75 },
 ]]
 
 const langs = [[
