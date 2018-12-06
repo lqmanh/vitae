@@ -6,6 +6,7 @@ import * as V from 'victory'
 import Section from './section'
 import Box, { ColoredBox } from '../common/box'
 import ContentFrame from '../common/content-frame'
+import HorizontalRule from '../common/horizontal-rule'
 
 
 const fields = [[
@@ -26,8 +27,11 @@ const langs = [[
 ]]
 
 const SideBar = (props) => (
-  <Box className='px-0 py-4 pr-md-3' distributeX='right'>
-    <h2 className='text-light text-right mb-0'>SKILLS & EXPERIENCE</h2>
+  <Box className='px-0 pt-0 pb-3 pr-md-3' distributeX='right'>
+    <div>
+      <h2 className='text-light text-right mb-0'>SKILLS & EXPERIENCE</h2>
+      <HorizontalRule />
+    </div>
   </Box>
 )
 
