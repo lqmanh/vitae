@@ -1,11 +1,14 @@
 import React from 'react'
+import styled from 'styled-components'
 
 import TopBar from './topbar'
 
 
-export default (props) => (
+export default styled((props) => (
   <>
     <TopBar />
-    {props.children}
+    <div className={props.className}>{props.children}</div>
   </>
-)
+))`
+  margin-top: 56px;
+`
