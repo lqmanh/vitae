@@ -3,6 +3,7 @@ import React from 'react'
 import Section from './section'
 import Box, { ColoredBox } from '../common/box'
 import ContentFrame from '../common/content-frame'
+import HorizontalRule from '../common/horizontal-rule'
 
 
 const things = [
@@ -51,8 +52,11 @@ const things = [
 ]
 
 const SideBar = (props) => (
-  <Box className='px-0 py-4 pr-md-3' distributeX='right'>
-    <h2 className='d-block text-light text-truncate mb-0'>THINGS I USE</h2>
+  <Box className='px-0 pt-0 pb-3 pr-md-3' distributeX='right'>
+    <div>
+      <h2 className='d-block text-light text-truncate mb-0'>THINGS I USE</h2>
+      <HorizontalRule />
+    </div>
   </Box>
 )
 
