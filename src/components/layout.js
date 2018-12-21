@@ -10,5 +10,5 @@ export default styled((props) => (
     <div className={props.className}>{props.children}</div>
   </>
 ))`
-  margin-top: 56px;
+  margin-top: 48px;
 `
