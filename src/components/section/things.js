@@ -21,32 +21,29 @@ const things = [
       'Bootstrap, Bulma (CSS)',
       'Next.js (Javascript)',
       'Node.js + Express (Javascript)',
+      'Oclif (Javascript), Click (Python)',
       'React (Javascript)',
-      'Scrapy (Python)',
     ],
     optionalValue: [
-      'Click (Python)',
       'Passport + JWT (Javascript)',
       'Storybook (Javascript)',
-      'styled-components, styled-jsx (CSS)',
+      'styled-components, styled-jsx (CSS in JS)',
     ]
   },
   {
     name: 'Platforms',
     value: [
-      'DBaaS (MongoDB Atlas)',
-      'Linux (Fedora, Manjaro + KDE)',
-      'PaaS (Heroku)',
-      'Serverless (AWS Lambda, Zeit Now)',
-      'VPS (Vultr)',
+      'Fedora, Manjaro + KDE (PC)',
+      'MongoDB Atlas (DBaaS)',
+      'Zeit Now (Serverless)',
     ],
   },
   {
     name: 'Tools',
     value: [
-      'Shell (Bash/Fish Shell)',
-      'Text Editor/IDE (Visual Studio Code, Vim)',
-      'VCS (Git + Github, Gitlab)',
+      'Bash/Fish (Shell)',
+      'Git + Github, Gitlab (VCS)',
+      'Visual Studio Code, Vim (Text editor/IDE)',
     ]
   },
 ]

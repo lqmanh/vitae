@@ -13,39 +13,33 @@ const projects = [
     value: [
       {
         name: 'directory-stat',
-        description: 'Directory statistics',
+        description: 'Composable directory statistics fetcher where "fs" is insufficient',
         url: 'https://www.npmjs.com/package/directory-stat',
-        status: 'Active'
-      },
-      {
-        name: 'shirt_crawler',
-        description: 'Crawl T-shirt information from e-commerce services like Amazon, Shopify,...',
-        url: 'https://github.com/lqmanh/shirt_crawler',
-        status: 'Active'
+        status: 'active'
       },
       {
         name: 'Vitae',
         description: 'Personal digital CV and more',
-        url: 'http://lqmanh.now.sh',
-        status: 'Active'
+        url: 'https://lqmanh.now.sh',
+        status: 'active'
       },
       {
         name: 'Chamomile',
-        description: 'Personal blog',
-        url: 'https://github.com/lqmanh/chamomile',
-        status: 'Coming Soon'
+        description: 'Chamomile - like daisy, but not daisy',
+        url: 'https://chamomile.now.sh',
+        status: 'active'
       },
       {
         name: 'Showtime',
-        description: 'Network monitoring app',
-        url: null,
-        status: 'Coming Soon'
+        description: 'Network device monitoring app',
+        url: '#',
+        status: 'coming soon'
       },
       {
         name: 'classer',
         description: 'Classify files into different directories',
         url: 'https://github.com/lqmanh/classer',
-        status: 'Discontinued'
+        status: 'discontinued'
       },
     ]
   },
@@ -53,27 +47,16 @@ const projects = [
     name: "Albert Team's Projects",
     value: [
       {
+        name: 'SpidermanJS',
+        description: 'Minimal distributed web crawler boilerplate for JavaScript',
+        url: 'https://github.com/albert-team/spidermanjs',
+        status: 'active'
+      },
+      {
         name: 'Albert',
-        description: 'URL shortener',
+        description: 'URL shortening service',
         url: 'https://albert-demo.herokuapp.com',
-        status: 'Discontinued'
-      },
-    ]
-  },
-  {
-    name: 'Projects I Contribute to',
-    value: [
-      {
-        name: 'sebdah/scrapy-mongodb',
-        description: 'MongoDB pipeline for Scrapy',
-        url: 'https://github.com/sebdah/scrapy-mongodb',
-        status: 'Active'
-      },
-      {
-        name: 'zeit/now-examples',
-        description: 'Examples of Now deployments you can use',
-        url: 'https://github.com/zeit/now-examples',
-        status: 'Active'
+        status: 'discontinued'
       },
     ]
   }
@@ -92,9 +75,13 @@ const Link = styled.a`
   color: #d32f2f;
   :hover {
     color: #d32f2f;
-    font-weight: bold;
     text-decoration: none;
   }
+`
+
+const Badge = styled((props) => <span className={`badge badge-light ${props.className}`}>{props.children}</span>)`
+  border: 1px solid;
+  color: rgba(0, 0, 0, .5);
 `
 
 const Body = (props) => (
@@ -103,17 +90,15 @@ const Body = (props) => (
       projects.map((type) => (
         <li className='mb-3'>
           <h4>{type.name}</h4>
-          <ol>{
-            type.value.map((project) => (
-              <li>
-                <Link className='text-monospace' href={project.url}>{project.name}</Link>
-                &nbsp;&nbsp;
-                <span className='badge badge-secondary'>{project.status}</span>
-                <br />
-                {project.description}
-              </li>
-            ))
-          }</ol>
+          {type.value.map((project) => (
+            <div className='row mb-2'>
+              <div className='col-12 col-md-4 col-xl-3'>
+                <Link className='mr-2' href={project.url}>{project.name}</Link>
+                <Badge>{project.status}</Badge>
+              </div>
+              <div className='col-12 col-md-8 col-xl-9'>{project.description}</div>
+            </div>
+          ))}
         </li>
       ))
     }</ul>
