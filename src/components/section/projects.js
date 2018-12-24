@@ -18,15 +18,15 @@ const projects = [
         status: 'active'
       },
       {
-        name: 'Vitae',
-        description: 'Personal digital CV and more',
-        url: 'https://lqmanh.now.sh',
+        name: 'LQM',
+        description: 'Personal blog',
+        url: 'https://lqm.now.sh',
         status: 'active'
       },
       {
-        name: 'Chamomile',
-        description: 'Chamomile - like daisy, but not daisy',
-        url: 'https://chamomile.now.sh',
+        name: 'Vitae',
+        description: 'Personal digital CV and more',
+        url: 'https://lqmanh.now.sh',
         status: 'active'
       },
       {
