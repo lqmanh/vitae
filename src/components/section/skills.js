@@ -10,20 +10,20 @@ import HorizontalRule from '../common/horizontal-rule'
 
 
 const fields = [[
-  { x: 'Database (MongoDB)', y: 80 },
-  { x: 'Network Monitoring (Icinga2+SNMP)', y: 35 },
-  { x: 'Web Backend (Node.js+Express)', y: 55 },
-  { x: 'Web Crawling (Scrapy)', y: 75 },
-  { x: 'Web Frontend (React+Bootstrap)', y: 75 },
+  { x: 'Database', y: 75 },
+  { x: 'Network Monitoring', y: 30 },
+  { x: 'Web Backend', y: 55 },
+  { x: 'Web Crawling', y: 75 },
+  { x: 'Web Frontend', y: 80 },
 ]]
 
 const langs = [[
   { x: 'C++', y: 15 },
-  { x: 'CSS', y: 70 },
-  { x: 'HTML', y: 75 },
-  { x: 'Javascript', y: 70 },
+  { x: 'CSS', y: 80 },
+  { x: 'HTML', y: 85 },
+  { x: 'Javascript', y: 80 },
   { x: 'Python', y: 80 },
-  { x: 'SQL', y: 55 },
+  { x: 'SQL', y: 50 },
 ]]
 
 const SideBar = (props) => (
