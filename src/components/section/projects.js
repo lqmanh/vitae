@@ -64,14 +64,16 @@ const Body = (props) => (
       projects.map((type) => (
         <li className='mb-3'>
           <h4>{type.name}</h4>
-          {type.value.map((project) => (
-            <div className='row'>
-              <div className='col-12 col-md-4 col-xl-3'>
-                <Link href={project.url}>{project.name}</Link>
-              </div>
-              <div className='col-12 col-md-8 col-xl-9'>{project.description}</div>
-            </div>
-          ))}
+          <dl className="row mb-0">{
+            type.value.map((project) => (
+              <>
+                <dt className="col-12 col-md-4 col-xl-3">
+                  <Link href={project.url}>{project.name}</Link>
+                </dt>
+                <dd className="col-12 col-md-8 col-xl-9">{project.description}</dd>
+              </>
+            ))
+          }</dl>
         </li>
       ))
     }</ul>
