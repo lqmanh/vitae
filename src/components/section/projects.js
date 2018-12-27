@@ -9,54 +9,33 @@ import HorizontalRule from '../common/horizontal-rule'
 
 const projects = [
   {
-    name: 'Personal Projects',
+    name: 'Personal',
     value: [
       {
         name: 'directory-stat',
         description: 'Composable directory statistics fetcher where "fs" is insufficient',
         url: 'https://www.npmjs.com/package/directory-stat',
-        status: 'active'
       },
       {
         name: 'LQM',
         description: 'Personal blog',
         url: 'https://lqm.now.sh',
-        status: 'active'
       },
       {
         name: 'Vitae',
         description: 'Personal digital CV and more',
-        url: 'https://lqmanh.now.sh',
-        status: 'active'
-      },
-      {
-        name: 'Showtime',
-        description: 'Network device monitoring app',
-        url: '#',
-        status: 'coming soon'
-      },
-      {
-        name: 'classer',
-        description: 'Classify files into different directories',
-        url: 'https://github.com/lqmanh/classer',
-        status: 'discontinued'
+        url: 'https://cvitae.now.sh',
       },
     ]
   },
   {
-    name: "Albert Team's Projects",
+    name: "Albert Team",
     value: [
       {
-        name: 'SpidermanJS',
+        name: 'Spiderman',
         description: 'Minimal distributed web crawler boilerplate for JavaScript',
-        url: 'https://github.com/albert-team/spidermanjs',
+        url: 'https://github.com/albert-team/spiderman',
         status: 'active'
-      },
-      {
-        name: 'Albert',
-        description: 'URL shortening service',
-        url: 'https://albert-demo.herokuapp.com',
-        status: 'discontinued'
       },
     ]
   }
@@ -72,16 +51,11 @@ const SideBar = (props) => (
 )
 
 const Link = styled.a`
-  color: #d32f2f;
+  color: rgba(211, 47, 47, .8);
   :hover {
-    color: #d32f2f;
+    color: rgba(211, 47, 47, 1);
     text-decoration: none;
   }
-`
-
-const Badge = styled((props) => <span className={`badge badge-light ${props.className}`}>{props.children}</span>)`
-  border: 1px solid;
-  color: rgba(0, 0, 0, .5);
 `
 
 const Body = (props) => (
@@ -91,10 +65,9 @@ const Body = (props) => (
         <li className='mb-3'>
           <h4>{type.name}</h4>
           {type.value.map((project) => (
-            <div className='row mb-2'>
+            <div className='row'>
               <div className='col-12 col-md-4 col-xl-3'>
-                <Link className='mr-2' href={project.url}>{project.name}</Link>
-                <Badge>{project.status}</Badge>
+                <Link href={project.url}>{project.name}</Link>
               </div>
               <div className='col-12 col-md-8 col-xl-9'>{project.description}</div>
             </div>

@@ -9,7 +9,6 @@ const sections = [
   { id: 'achievements', name: 'Achievements' },
   { id: 'skills', name: 'Skills & Experience' },
   { id: 'projects', name: 'Projects' },
-  { id: 'things-i-use', name: 'Things I Use' },
 ]
 
 const ColoredText = styled.span`
