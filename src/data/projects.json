@@ -24,7 +24,7 @@
     "value": [
       {
         "name": "Spiderman",
-        "description": "Minimal distributed web crawler boilerplate for JavaScript",
+        "description": "Minimal distributed web crawler for JavaScript",
         "url": "https://github.com/albert-team/spiderman",
         "status": "active"
       }
