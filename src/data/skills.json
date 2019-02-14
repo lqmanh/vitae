@@ -1,0 +1,20 @@
+{
+  "fields": [
+    [
+      { "x": "Database", "y": 70 },
+      { "x": "Network Monitoring", "y": 35 },
+      { "x": "Web Backend", "y": 60 },
+      { "x": "Web Crawling", "y": 75 },
+      { "x": "Web Frontend", "y": 80 }
+    ]
+  ],
+  "langs": [
+    [
+      { "x": "CSS", "y": 85 },
+      { "x": "HTML", "y": 85 },
+      { "x": "Javascript", "y": 75 },
+      { "x": "Python", "y": 80 },
+      { "x": "SQL", "y": 50 }
+    ]
+  ]
+}
