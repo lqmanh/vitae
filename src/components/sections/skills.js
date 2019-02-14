@@ -7,6 +7,7 @@ import Section from './section'
 import Box, { ColoredBox } from '../common/box'
 import ContentFrame from '../common/content-frame'
 import HorizontalRule from '../common/horizontal-rule'
+import { COLOR_PRIMARY } from '../../constants'
 import { fields, langs } from '../../data/skills.json'
 
 const SideBar = (props) => (
@@ -22,7 +23,7 @@ const Chart = (props) => (
   <>
     <h4 className='text-center pt-4'>{props.caption}</h4>
     <V.VictoryChart polar>
-      <V.VictoryGroup color='#d32f2f' style={{ data: { fillOpacity: 1 } }}>
+      <V.VictoryGroup color={COLOR_PRIMARY} style={{ data: { fillOpacity: 1 } }}>
         {props.data.map((item, i) => (
           <V.VictoryArea key={i} data={item} />
         ))}

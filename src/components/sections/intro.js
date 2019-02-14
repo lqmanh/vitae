@@ -16,7 +16,7 @@ export default (props) => (
       <div className='row py-3'>
         <div className='col'>
           {contacts.map((logo) => (
-            <a className='h1 mx-3' href={logo.href}>
+            <a className='h1 mx-3 text-light' href={logo.href}>
               <ion-icon name={logo.iconName} />
             </a>
           ))}

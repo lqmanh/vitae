@@ -25,5 +25,11 @@
   "devDependencies": {
     "@babel/core": "^7.2.0",
     "babel-loader": "^8.0.4"
-  }
+  },
+  "browserslist": [
+    ">1.0%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

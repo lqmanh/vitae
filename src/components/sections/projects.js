@@ -1,10 +1,9 @@
 import React from 'react'
-import styled from 'styled-components'
-
 import Section from './section'
 import Box, { ColoredBox } from '../common/box'
 import ContentFrame from '../common/content-frame'
 import HorizontalRule from '../common/horizontal-rule'
+import Link from '../common/link'
 import projects from '../../data/projects.json'
 
 const SideBar = (props) => (
@@ -15,14 +14,6 @@ const SideBar = (props) => (
     </div>
   </Box>
 )
-
-const Link = styled.a`
-  color: rgba(211, 47, 47, 0.8);
-  :hover {
-    color: rgba(211, 47, 47, 1);
-    text-decoration: none;
-  }
-`
 
 const Body = (props) => (
   <ColoredBox className='p-4' borderRadius='1rem' color='#f8f9fa' distributeX='left' width='100%' height='100%'>

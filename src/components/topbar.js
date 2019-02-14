@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import constants from '../constants'
+import { COLOR_PRIMARY } from '../constants'
 
 const sections = [
   { id: 'profile', name: 'Profile' },
@@ -18,7 +18,7 @@ export default styled((props) => (
   <nav className={`navbar navbar-expand-md navbar-light fixed-top bg-light shadow ${props.className}`}>
     <a className='navbar-brand' href='#top'>
       <strong>
-        <ColoredText color={constants.COLOR_PRIMARY}>VITAE</ColoredText>
+        <ColoredText color={COLOR_PRIMARY}>VITAE</ColoredText>
       </strong>
     </a>
     <button className='navbar-toggler' data-toggle='collapse' data-target='#navbar-nav'>
