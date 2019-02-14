@@ -3,7 +3,6 @@ import styled from 'styled-components'
 
 import TopBar from './topbar'
 
-
 export default styled((props) => (
   <>
     <TopBar />
