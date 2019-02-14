@@ -26,8 +26,8 @@ export default styled((props) => (
     </button>
     <div className='collapse navbar-collapse' id='navbar-nav'>
       <div className='navbar-nav'>
-        {sections.map((sect) => (
-          <a className={`nav-item nav-link`} href={`#${sect.id}`}>
+        {sections.map((sect, i) => (
+          <a className={`nav-item nav-link`} href={`#${sect.id}`} key={i}>
             {sect.name}
           </a>
         ))}

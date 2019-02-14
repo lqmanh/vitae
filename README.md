@@ -1,2 +1,3 @@
-# VITAE v0.1.4
+# VITAE v0.2.0
+
 > Personal digital CV and more

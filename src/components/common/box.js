@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-
 const Box = (props) => {
   let distributeX, distributeY
   if (props.distributeX === 'left') distributeX = 'justify-content-start'
@@ -12,9 +11,7 @@ const Box = (props) => {
   else distributeY = 'align-items-center'
 
   return (
-    <div className={`d-flex ${distributeX} ${distributeY} ${props.className}`}
-      id={props.id}
-    >
+    <div className={`d-flex ${distributeX} ${distributeY} ${props.className}`} id={props.id}>
       {props.children}
     </div>
   )

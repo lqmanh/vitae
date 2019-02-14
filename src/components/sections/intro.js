@@ -3,7 +3,7 @@ import React from 'react'
 import Section from './section'
 import contacts from '../../data/contacts.json'
 
-export default (props) => (
+export default () => (
   <Section id='intro' height='calc(100vh - 48px)'>
     <div className='text-center text-light'>
       <div className='row py-3'>
@@ -15,8 +15,8 @@ export default (props) => (
       </div>
       <div className='row py-3'>
         <div className='col'>
-          {contacts.map((logo) => (
-            <a className='h1 mx-3 text-light' href={logo.href}>
+          {contacts.map((logo, i) => (
+            <a className='h1 mx-3 text-light' href={logo.href} key={i}>
               <ion-icon name={logo.iconName} />
             </a>
           ))}

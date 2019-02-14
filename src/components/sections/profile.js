@@ -12,13 +12,13 @@ const Avatar = styled.img`
   max-height: 300px;
 `
 
-const SideBar = (props) => (
+const SideBar = () => (
   <Box className='px-0 pt-0 pb-3 pr-md-3' distributeX='right'>
     <Avatar className='rounded-circle' src={avatarImg} alt='Avatar' width='100%' height='100%' />
   </Box>
 )
 
-const Body = (props) => (
+const Body = () => (
   <ColoredBox className='p-4' borderRadius='1rem' color='#f8f9fa' width='100%' height='100%'>
     <div>
       <h4>About me</h4>
@@ -34,7 +34,7 @@ const Body = (props) => (
   </ColoredBox>
 )
 
-export default (props) => (
+export default () => (
   <Section id='profile'>
     <div className='container container-fluid'>
       <ContentFrame sideBar={<SideBar />} body={<Body />} />

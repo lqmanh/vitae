@@ -10,7 +10,7 @@ import HorizontalRule from '../common/horizontal-rule'
 import { COLOR_PRIMARY } from '../../constants'
 import { fields, langs } from '../../data/skills.json'
 
-const SideBar = (props) => (
+const SideBar = () => (
   <Box className='px-0 pt-0 pb-3 pr-md-3' distributeX='right'>
     <div>
       <h2 className='text-light text-right mb-0'>SKILLS & EXPERIENCE</h2>
@@ -51,9 +51,9 @@ const Chart = (props) => (
   </>
 )
 
-const FieldsChart = (props) => <Chart data={fields} caption='Fields' />
+const FieldsChart = () => <Chart data={fields} caption='Fields' />
 
-const LanguagesChart = (props) => <Chart data={langs} caption='Languages' />
+const LanguagesChart = () => <Chart data={langs} caption='Languages' />
 
 const SlideButton = styled.button`
   background-color: rgb(248, 249, 250);
@@ -78,7 +78,7 @@ const SlideNext = ({ nextSlide }) => (
   </SlideButton>
 )
 
-const Body = (props) => (
+const Body = () => (
   <ColoredBox borderRadius='1rem' color='#f8f9fa' padding='0' width='100%' height='100%'>
     <Carousel
       autoplay={true}
@@ -94,7 +94,7 @@ const Body = (props) => (
   </ColoredBox>
 )
 
-export default (props) => (
+export default () => (
   <Section id='skills'>
     <div className='container container-fluid'>
       <ContentFrame sideBar={<SideBar />} body={<Body />} />
