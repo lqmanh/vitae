@@ -4,22 +4,7 @@ import Section from './section'
 import Box, { ColoredBox } from '../common/box'
 import ContentFrame from '../common/content-frame'
 import HorizontalRule from '../common/horizontal-rule'
-
-
-const achievements = [
-  {
-    name: 'Professional',
-    value: [
-      'Leader of Albert Team'
-    ]
-  },
-  {
-    name: 'Others',
-    value: [
-      'Former Vice President of Thuyet Trinh Club - UET, VNU'
-    ]
-  }
-]
+import achievements from '../../data/achievements.json'
 
 const SideBar = (props) => (
   <Box className='px-0 pt-0 pb-3 pr-md-3' distributeX='right'>
@@ -32,17 +17,20 @@ const SideBar = (props) => (
 
 const Body = (props) => (
   <ColoredBox className='p-4' borderRadius='1rem' color='#f8f9fa' distributeX='left' width='100%' height='100%'>
-    <ul className='list-unstyled mb-0'>{
-      achievements.map((type) => (
+    <ul className='list-unstyled mb-0'>
+      {achievements.map((type) => (
         <li className='mb-3'>
           <h4>{type.name}</h4>
-          <ol>{type.value.map((achiev) => <li>{achiev}</li>)}</ol>
+          <ol>
+            {type.value.map((achiev) => (
+              <li>{achiev}</li>
+            ))}
+          </ol>
         </li>
-      ))
-    }</ul>
+      ))}
+    </ul>
   </ColoredBox>
 )
-
 
 export default (props) => (
   <Section id='achievements'>
