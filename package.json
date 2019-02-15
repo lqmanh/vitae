@@ -1,35 +1,32 @@
 {
   "name": "vitae",
   "description": "Personal digital CV and more",
-  "version": "0.1.4",
   "license": "MIT",
+  "version": "0.2.0",
   "repository": "github:lqmanh/vitae",
+  "main": "public/index.html",
+  "scripts": {
+    "start": "parcel public/index.html",
+    "build": "parcel build public/index.html",
+    "now-build": "yarn run build"
+  },
   "dependencies": {
-    "bootstrap": "^4.3.0",
+    "bootstrap": "^4.3.1",
     "jquery": "^3.3.1",
     "nuka-carousel": "^4.4.3",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "react-scripts": "2.1.5",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
     "styled-components": "^4.1.2",
     "victory": "^31.0.1"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "now-build": "yarn run build",
-    "postnow-build": "mv build dist"
-  },
   "devDependencies": {
-    "@babel/core": "^7.2.0",
-    "babel-loader": "^8.0.4"
-  },
-  "browserslist": [
-    ">1.0%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.12.0",
+    "eslint-plugin-react": "^7.12.4",
+    "parcel-bundler": "^1.11.0"
+  }
 }
