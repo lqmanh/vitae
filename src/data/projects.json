@@ -25,8 +25,17 @@
       {
         "name": "Spiderman",
         "description": "Minimal distributed web crawler for JavaScript",
-        "url": "https://github.com/albert-team/spiderman",
-        "status": "active"
+        "url": "https://www.npmjs.com/package/@albert-team/spiderman"
+      },
+      {
+        "name": "Red",
+        "description": "Minimal Redis client for Node.js",
+        "url": "https://www.npmjs.com/package/@albert-team/red"
+      },
+      {
+        "name": "Rebloom",
+        "description": "RedisBloom for Node.js",
+        "url": "https://www.npmjs.com/package/@albert-team/rebloom"
       }
     ]
   }

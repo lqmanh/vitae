@@ -14,18 +14,18 @@
     "bootstrap": "^4.3.1",
     "jquery": "^3.3.1",
     "nuka-carousel": "^4.4.3",
-    "react": "^16.8.2",
-    "react-dom": "^16.8.2",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
     "styled-components": "^4.1.2",
-    "victory": "^31.0.1"
+    "victory": "^32.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/plugin-proposal-class-properties": "^7.2.3",
-    "@babel/preset-env": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.12.0",
+    "eslint": "^5.14.1",
     "eslint-plugin-react": "^7.12.4",
     "parcel-bundler": "^1.11.0"
   }
