@@ -24,17 +24,17 @@
     "value": [
       {
         "name": "Spiderman",
-        "description": "Minimal distributed web crawler for JavaScript",
+        "description": "Minimalistic web crawler for Node.js",
         "url": "https://www.npmjs.com/package/@albert-team/spiderman"
       },
       {
         "name": "Red",
-        "description": "Minimal Redis client for Node.js",
+        "description": "Minimalistic Redis client for Node.js",
         "url": "https://www.npmjs.com/package/@albert-team/red"
       },
       {
         "name": "Rebloom",
-        "description": "RedisBloom for Node.js",
+        "description": "Bloom filter and Cuckoo filter for Node.js using Redis with RedisBloom module",
         "url": "https://www.npmjs.com/package/@albert-team/rebloom"
       }
     ]

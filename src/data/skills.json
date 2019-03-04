@@ -1,19 +1,20 @@
 {
   "fields": [
     [
-      { "x": "Database", "y": 70 },
-      { "x": "Network Monitoring", "y": 35 },
+      { "x": "Database", "y": 65 },
+      { "x": "Distributed Systems", "y": 5 },
+      { "x": "Network Monitoring", "y": 40 },
       { "x": "Web Backend", "y": 60 },
-      { "x": "Web Crawling", "y": 75 },
-      { "x": "Web Frontend", "y": 80 }
+      { "x": "Web Crawling", "y": 80 },
+      { "x": "Web Frontend", "y": 75 }
     ]
   ],
   "langs": [
     [
-      { "x": "CSS", "y": 85 },
-      { "x": "HTML", "y": 85 },
-      { "x": "Javascript", "y": 75 },
-      { "x": "Python", "y": 80 },
+      { "x": "CSS", "y": 75 },
+      { "x": "HTML", "y": 80 },
+      { "x": "Javascript", "y": 70 },
+      { "x": "Python", "y": 70 },
       { "x": "SQL", "y": 50 }
     ]
   ]
