@@ -2,7 +2,7 @@
   "name": "vitae",
   "description": "Personal digital CV and more",
   "license": "MIT",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "repository": "github:lqmanh/vitae",
   "main": "public/index.html",
   "scripts": {

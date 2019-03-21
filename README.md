@@ -1,3 +1,5 @@
-# VITAE v0.3.0
+# VITAE
 
 > Personal digital CV and more
+
+Homepage: https://cvitae.now.sh
