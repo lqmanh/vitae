@@ -3,11 +3,13 @@ import styled from 'styled-components'
 
 import TopBar from './topbar'
 
-export default styled((props) => (
+const Layout = (props) => (
   <>
     <TopBar />
     <div className={props.className}>{props.children}</div>
   </>
-))`
+)
+
+export default styled(Layout)`
   margin-top: 48px;
 `

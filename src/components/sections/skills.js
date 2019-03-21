@@ -4,7 +4,7 @@ import Carousel from 'nuka-carousel'
 import * as V from 'victory'
 
 import Section from './section'
-import Box, { ColoredBox } from '../common/box'
+import Box from '../common/box'
 import ContentFrame from '../common/content-frame'
 import HorizontalRule from '../common/horizontal-rule'
 import { COLOR_PRIMARY } from '../../constants'
@@ -79,7 +79,7 @@ const SlideNext = ({ nextSlide }) => (
 )
 
 const Body = () => (
-  <ColoredBox borderRadius='1rem' color='#f8f9fa' padding='0' width='100%' height='100%'>
+  <Box width='100%' height='100%' borderRadius='1rem' color='#f8f9fa' padding='0'>
     <Carousel
       autoplay={true}
       autoplayInterval='5000'
@@ -91,7 +91,7 @@ const Body = () => (
       <FieldsChart />
       <LanguagesChart />
     </Carousel>
-  </ColoredBox>
+  </Box>
 )
 
 export default () => (

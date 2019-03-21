@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Section from './section'
-import Box, { ColoredBox } from '../common/box'
+import Box from '../common/box'
 import ContentFrame from '../common/content-frame'
 import HorizontalRule from '../common/horizontal-rule'
 import achievements from '../../data/achievements.json'
@@ -16,7 +16,7 @@ const SideBar = () => (
 )
 
 const Body = () => (
-  <ColoredBox className='p-4' borderRadius='1rem' color='#f8f9fa' distributeX='left' width='100%' height='100%'>
+  <Box className='p-4' width='100%' height='100%' borderRadius='1rem' color='#f8f9fa' distributeX='left'>
     <ul className='list-unstyled mb-0'>
       {achievements.map((type, i) => (
         <li className='mb-3' key={i}>
@@ -29,7 +29,7 @@ const Body = () => (
         </li>
       ))}
     </ul>
-  </ColoredBox>
+  </Box>
 )
 
 export default () => (

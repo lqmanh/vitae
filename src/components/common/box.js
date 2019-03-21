@@ -2,13 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Box = (props) => {
-  let distributeX, distributeY
+  let distributeX = 'justify-content-center'
   if (props.distributeX === 'left') distributeX = 'justify-content-start'
   else if (props.distributeX === 'right') distributeX = 'justify-content-end'
-  else distributeX = 'justify-content-center'
+
+  let distributeY = 'align-items-center'
   if (props.distributeY === 'top') distributeY = 'align-items-start'
   else if (props.distributeY === 'bottom') distributeY = 'align-items-end'
-  else distributeY = 'align-items-center'
 
   return (
     <div className={`d-flex ${distributeX} ${distributeY} ${props.className}`} id={props.id}>
@@ -17,16 +17,10 @@ const Box = (props) => {
   )
 }
 
-const StyledBox = styled(Box)`
-  border-radius: ${(props) => props.borderRadius};
+export default styled(Box)`
   height: ${(props) => props.height};
-  padding: ${(props) => props.padding || '1rem'};
   width: ${(props) => props.width};
+  background-color: ${(props) => props.color || 'transparent'};
+  border-radius: ${(props) => props.borderRadius || '0'};
+  padding: ${(props) => props.padding || '0'};
 `
-
-const ColoredBox = styled(StyledBox)`
-  background-color: ${(props) => props.color || 'gray'};
-`
-
-export default StyledBox
-export { ColoredBox }
