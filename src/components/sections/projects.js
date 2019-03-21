@@ -1,4 +1,5 @@
 import React from 'react'
+
 import Section from './section'
 import Box from '../common/box'
 import ContentFrame from '../common/content-frame'
@@ -9,7 +10,7 @@ import projects from '../../data/projects.json'
 const SideBar = () => (
   <Box className='px-0 pt-0 pb-3 pr-md-3' distributeX='right'>
     <div>
-      <h2 className='d-block text-light text-truncate mb-0'>PROJECTS</h2>
+      <h2 className='text-light text-right mb-0'>PROJECTS</h2>
       <HorizontalRule />
     </div>
   </Box>
@@ -39,8 +40,6 @@ const Body = () => (
 
 export default () => (
   <Section id='projects'>
-    <div className='container container-fluid'>
-      <ContentFrame sideBar={<SideBar />} body={<Body />} />
-    </div>
+    <ContentFrame sideBar={<SideBar />} body={<Body />} />
   </Section>
 )

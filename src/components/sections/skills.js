@@ -79,7 +79,7 @@ const SlideNext = ({ nextSlide }) => (
 )
 
 const Body = () => (
-  <Box width='100%' height='100%' borderRadius='1rem' color='#f8f9fa' padding='0'>
+  <Box className='p-0' width='100%' height='100%' borderRadius='1rem' color='#f8f9fa'>
     <Carousel
       autoplay={true}
       autoplayInterval='5000'
@@ -96,8 +96,6 @@ const Body = () => (
 
 export default () => (
   <Section id='skills'>
-    <div className='container container-fluid'>
-      <ContentFrame sideBar={<SideBar />} body={<Body />} />
-    </div>
+    <ContentFrame sideBar={<SideBar />} body={<Body />} />
   </Section>
 )

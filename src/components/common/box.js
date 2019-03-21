@@ -22,5 +22,4 @@ export default styled(Box)`
   width: ${(props) => props.width};
   background-color: ${(props) => props.color || 'transparent'};
   border-radius: ${(props) => props.borderRadius || '0'};
-  padding: ${(props) => props.padding || '0'};
 `

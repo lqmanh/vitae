@@ -4,7 +4,7 @@ import Box from '../common/box'
 import { COLOR_PRIMARY } from '../../constants'
 
 export default (props) => (
-  <Box id={props.id} width='100%' height={props.height} color={COLOR_PRIMARY} padding='48px'>
+  <Box className='p-0 p-md-5' id={props.id} width='100%' height={props.height} color={COLOR_PRIMARY}>
     {props.children}
   </Box>
 )

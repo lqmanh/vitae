@@ -14,7 +14,7 @@ const Avatar = styled.img`
 
 const SideBar = () => (
   <Box className='px-0 pt-0 pb-3 pr-md-3' distributeX='right'>
-    <Avatar className='rounded-circle' src={avatarImg} alt='Avatar' width='100%' height='100%' />
+    <Avatar className='rounded-circle' src={avatarImg} width='100%' height='100%' />
   </Box>
 )
 
@@ -36,8 +36,6 @@ const Body = () => (
 
 export default () => (
   <Section id='profile'>
-    <div className='container container-fluid'>
-      <ContentFrame sideBar={<SideBar />} body={<Body />} />
-    </div>
+    <ContentFrame sideBar={<SideBar />} body={<Body />} />
   </Section>
 )
