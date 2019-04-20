@@ -23,15 +23,19 @@ const Body = () => (
     <div>
       <h4>About me</h4>
       <dl className='row mb-0'>
-        {profileInfo.map((field) => (
-          <>
-            <dt className='col-12 col-md-4 col-xl-3'>{field.fieldName}</dt>
-            <dd className='col-12 col-md-8 col-xl-9'>{field.value}</dd>
-          </>
+        {profileInfo.map((field, i) => (
+          <Field field={field} isLast={i === profileInfo.length - 1} key={i} />
         ))}
       </dl>
     </div>
   </Box>
+)
+
+const Field = ({ field, isLast }) => (
+  <>
+    <dt className='col-12 col-md-4 col-xl-3'>{field.fieldName}</dt>
+    <dd className={`col-12 col-md-8 col-xl-9 ${isLast ? 'mb-0' : ''}`}>{field.value}</dd>
+  </>
 )
 
 export default () => (

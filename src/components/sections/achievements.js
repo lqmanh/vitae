@@ -16,10 +16,17 @@ const SideBar = () => (
 )
 
 const Body = () => (
-  <Box className='p-4' width='100%' height='100%' borderRadius='1rem' color='#f8f9fa' distributeX='left'>
+  <Box
+    className='p-4'
+    width='100%'
+    height='100%'
+    borderRadius='1rem'
+    color='#f8f9fa'
+    distributeX='left'
+  >
     <ul className='list-unstyled mb-0'>
       {achievements.map((type, i) => (
-        <li className='mb-3' key={i}>
+        <li className={i === achievements.length - 1 ? '' : 'mb-3'} key={i}>
           <h4>{type.name}</h4>
           <ol>
             {type.value.map((achiev, j) => (
