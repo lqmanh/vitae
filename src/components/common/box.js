@@ -11,7 +11,10 @@ const Box = (props) => {
   else if (props.distributeY === 'bottom') distributeY = 'align-items-end'
 
   return (
-    <div className={`d-flex ${distributeX} ${distributeY} ${props.className}`} id={props.id}>
+    <div
+      className={`d-flex ${distributeX} ${distributeY} ${props.className}`}
+      id={props.id}
+    >
       {props.children}
     </div>
   )
