@@ -8,6 +8,12 @@
   },
   { "fieldName": "Occupation", "value": "Part-time employee at Teneocto Inc." },
   { "fieldName": "Languages", "value": "Vietnamese, English" },
-  { "fieldName": "Personalities", "value": "Reliable, studious, creative, ambitious,..." },
-  { "fieldName": "Interests", "value": "Technology, music (especially piano), writing, photography, cinema,..." }
+  {
+    "fieldName": "Personalities",
+    "value": "Reliable, studious, creative, ambitious,..."
+  },
+  {
+    "fieldName": "Interests",
+    "value": "Technology, music (especially piano), writing, photography, cinema,..."
+  }
 ]

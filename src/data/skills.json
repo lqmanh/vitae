@@ -1,21 +1,21 @@
 {
   "fields": [
     [
-      { "x": "Database", "y": 65 },
-      { "x": "Distributed Systems", "y": 5 },
+      { "x": "Database (SQL & noSQL)", "y": 55 },
       { "x": "Network Monitoring", "y": 40 },
-      { "x": "Web Backend", "y": 60 },
+      { "x": "OS (Linux)", "y": 20 },
+      { "x": "Software Architecture", "y": 20 },
       { "x": "Web Crawling", "y": 80 },
-      { "x": "Web Frontend", "y": 75 }
+      { "x": "Web Fullstack", "y": 65 }
     ]
   ],
   "langs": [
     [
-      { "x": "CSS", "y": 75 },
-      { "x": "HTML", "y": 80 },
+      { "x": "HTML & CSS", "y": 80 },
       { "x": "Javascript", "y": 70 },
       { "x": "Python", "y": 70 },
-      { "x": "SQL", "y": 50 }
+      { "x": "Rust", "y": 10 },
+      { "x": "SQL", "y": 45 }
     ]
   ]
 }
