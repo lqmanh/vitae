@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Layout from './components/layout'
-import { Achievements, Intro, Profile, Projects, Skills } from './components/sections'
+import { Achievements, Intro, Portfolio, Profile, Skills } from './components/sections'
 
 export default () => (
   <Layout>
@@ -9,6 +9,6 @@ export default () => (
     <Profile />
     <Achievements />
     <Skills />
-    <Projects />
+    <Portfolio />
   </Layout>
 )

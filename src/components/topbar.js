@@ -5,9 +5,10 @@ import { COLOR_PRIMARY } from '../constants'
 
 const sections = [
   { id: 'profile', name: 'Profile' },
+  { id: 'timeline', name: 'Timeline' },
   { id: 'achievements', name: 'Achievements' },
   { id: 'skills', name: 'Skills & Experience' },
-  { id: 'projects', name: 'Projects' }
+  { id: 'portfolio', name: 'Portfolio' }
 ]
 
 const ColoredText = styled.span`
@@ -15,7 +16,11 @@ const ColoredText = styled.span`
 `
 
 export default styled((props) => (
-  <nav className={`navbar navbar-expand-md navbar-light fixed-top bg-light shadow ${props.className}`}>
+  <nav
+    className={`navbar navbar-expand-md navbar-light fixed-top bg-light shadow ${
+      props.className
+    }`}
+  >
     <a className='navbar-brand' href='#top'>
       <strong>
         <ColoredText color={COLOR_PRIMARY}>VITAE</ColoredText>

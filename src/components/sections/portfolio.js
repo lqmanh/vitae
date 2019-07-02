@@ -10,7 +10,7 @@ import projects from '../../data/projects.json'
 const SideBar = () => (
   <Box className='px-0 pt-0 pb-3 pr-md-3' distributeX='right'>
     <div>
-      <h2 className='text-light text-right mb-0'>PROJECTS</h2>
+      <h2 className='text-light text-right mb-0'>PORTFOLIO</h2>
       <HorizontalRule />
     </div>
   </Box>
@@ -52,7 +52,7 @@ const Project = ({ project, isLast }) => (
 )
 
 export default () => (
-  <Section id='projects'>
+  <Section id='portfolio'>
     <ContentFrame sideBar={<SideBar />} body={<Body />} />
   </Section>
 )
