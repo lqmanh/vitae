@@ -2,6 +2,7 @@
   { "href": "https://www.facebook.com/lqmanh85", "iconName": "logo-facebook" },
   { "href": "https://www.instagram.com/lqmanh85", "iconName": "logo-instagram" },
   { "href": "https://twitter.com/lqmanh85", "iconName": "logo-twitter" },
-  { "href": "mailto:luongquangmanh85@gmail.com", "iconName": "mail" },
-  { "href": "https://github.com/lqmanh", "iconName": "logo-github" }
+  { "href": "https://github.com/lqmanh", "iconName": "logo-github" },
+  { "href": "https://lqm.now.sh", "iconName": "paper-plane" },
+  { "href": "mailto:luongquangmanh85@gmail.com", "iconName": "mail" }
 ]
