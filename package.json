@@ -14,7 +14,7 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.0",
-    "nuka-carousel": "^4.5.4",
+    "nuka-carousel": "^4.5.12",
     "react": "^16.8.6",
     "react-dom": "^16.9.0",
     "styled-components": "^4.2.0",
