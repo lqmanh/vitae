@@ -22,6 +22,6 @@ const Box = (props) => {
 export default styled(Box)`
   height: ${(props) => props.height};
   width: ${(props) => props.width};
-  background-color: ${(props) => props.color || 'transparent'};
+  background: ${(props) => props.color || 'transparent'};
   border-radius: ${(props) => props.borderRadius || '0'};
 `

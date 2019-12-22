@@ -1,5 +1,5 @@
 import Box from '../common/box'
-import { COLOR_PRIMARY } from '../../constants'
+import { GRADIENT_PRIMARY } from '../../constants'
 
 export default (props) => (
   <Box
@@ -7,7 +7,7 @@ export default (props) => (
     id={props.id}
     width='100%'
     height={props.height}
-    color={COLOR_PRIMARY}
+    color={GRADIENT_PRIMARY}
   >
     {props.children}
   </Box>

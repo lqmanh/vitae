@@ -1,3 +1,5 @@
 const COLOR_PRIMARY = '#d84315'
+const COLOR_SECONDARY = '#ea572a'
+const GRADIENT_PRIMARY = `linear-gradient(to right, ${COLOR_PRIMARY}, ${COLOR_SECONDARY})`
 
-export { COLOR_PRIMARY }
+export { COLOR_PRIMARY, COLOR_SECONDARY, GRADIENT_PRIMARY }
