@@ -5,7 +5,6 @@ import { COLOR_PRIMARY } from '../constants'
 
 const sections = [
   { id: 'profile', name: 'Profile' },
-  { id: 'timeline', name: 'Timeline' },
   { id: 'achievements', name: 'Achievements' },
   { id: 'skills', name: 'Skills & Experience' },
   { id: 'portfolio', name: 'Portfolio' }
@@ -17,9 +16,7 @@ const ColoredText = styled.span`
 
 export default styled((props) => (
   <nav
-    className={`navbar navbar-expand-md navbar-light fixed-top bg-light shadow ${
-      props.className
-    }`}
+    className={`navbar navbar-expand-sm fixed-top shadow navbar-light bg-light ${props.className}`}
   >
     <a className='navbar-brand' href='#top'>
       <strong>
@@ -30,9 +27,9 @@ export default styled((props) => (
       <span className='navbar-toggler-icon' />
     </button>
     <div className='collapse navbar-collapse' id='navbar-nav'>
-      <div className='navbar-nav'>
+      <div className='navbar-nav ml-auto'>
         {sections.map((sect, i) => (
-          <a className={`nav-item nav-link`} href={`#${sect.id}`} key={i}>
+          <a className={`nav-item nav-link active`} href={`#${sect.id}`} key={i}>
             {sect.name}
           </a>
         ))}
