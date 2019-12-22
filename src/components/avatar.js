@@ -5,6 +5,6 @@ const Avatar = styled.img`
   max-height: 300px;
 `
 
-export default (
-  <Avatar className='rounded-circle' src='/avatar.jpg' width='100%' height='100%' />
+export default () => (
+  <Avatar className='rounded-circle' src='/avatar.jpg' width='256' height='256' />
 )

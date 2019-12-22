@@ -3,7 +3,7 @@ import { COLOR_PRIMARY } from '../../constants'
 
 export default (props) => (
   <Box
-    className='p-0 pt-md-5'
+    className={`p-0 ${props.noPaddingTop ? '' : 'pt-md-5'}`}
     id={props.id}
     width='100%'
     height={props.height}
