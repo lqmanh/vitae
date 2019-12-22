@@ -1,4 +1,3 @@
-import React from 'react'
 import Box from '../common/box'
 import { COLOR_PRIMARY } from '../../constants'
 

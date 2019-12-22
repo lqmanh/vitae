@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import avatarImg from '../static/avatar.jpg'
 
 const Avatar = styled.img`
   max-width: 300px;
@@ -7,5 +6,5 @@ const Avatar = styled.img`
 `
 
 export default (
-  <Avatar className='rounded-circle' src={avatarImg} width='100%' height='100%' />
+  <Avatar className='rounded-circle' src='/avatar.jpg' width='100%' height='100%' />
 )

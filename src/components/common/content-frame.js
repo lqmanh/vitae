@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default (props) => (
   <div className='container container-fluid'>
     <div className='row p-3'>

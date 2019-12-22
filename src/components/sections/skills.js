@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import Carousel from 'nuka-carousel'
 import * as V from 'victory'
@@ -82,7 +81,7 @@ const Body = () => (
   <Box className='p-0' width='100%' height='100%' borderRadius='1rem' color='#f8f9fa'>
     <Carousel
       autoplay={true}
-      autoplayInterval='5000'
+      autoplayInterval={5000}
       disableKeyboardControls={true}
       wrapAround={true}
       renderCenterLeftControls={SlidePrev}

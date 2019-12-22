@@ -1,5 +1,3 @@
-import React from 'react'
-
 import Section from './section'
 import Box from '../common/box'
 import ContentFrame from '../common/content-frame'

@@ -1,6 +1,4 @@
-import React from 'react'
 import styled from 'styled-components'
-
 import { COLOR_PRIMARY } from '../constants'
 
 const sections = [
