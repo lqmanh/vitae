@@ -8,25 +8,23 @@
   "main": "public/index.html",
   "scripts": {
     "start": "parcel public/index.html",
-    "build": "parcel build public/index.html",
-    "now-build": "yarn run build"
+    "build": "parcel build public/index.html"
   },
   "dependencies": {
-    "bootstrap": "^4.3.1",
-    "jquery": "^3.4.0",
-    "nuka-carousel": "^4.5.4",
-    "react": "^16.8.6",
-    "react-dom": "^16.9.0",
-    "styled-components": "^4.2.0",
-    "victory": "^32.2.0"
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "nuka-carousel": "^4.6.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "styled-components": "^4.4.1",
+    "victory": "^34.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.3",
-    "@babel/preset-env": "^7.4.3",
-    "@babel/preset-react": "^7.0.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.16.0",
-    "eslint-plugin-react": "^7.12.4",
-    "parcel-bundler": "^1.12.3"
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.17.0",
+    "parcel-bundler": "^1.12.4"
   }
 }

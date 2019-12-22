@@ -1,6 +1,5 @@
 {
   "version": 2,
   "alias": "cvitae",
-  "scope": "lqmanh",
-  "builds": [{ "src": "package.json", "use": "@now/static-build" }]
+  "scope": "lqmanh"
 }
