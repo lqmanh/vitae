@@ -1,7 +1,11 @@
 [
   {
     "name": "Professional",
-    "value": ["Leader of Albert Team"]
+    "value": [
+      "Leader of Albert Team",
+      "Founder of Night Watch Project",
+      "Public speaker at Flutter Dev Meetup in Hanoi #1"
+    ]
   },
   {
     "name": "Others",

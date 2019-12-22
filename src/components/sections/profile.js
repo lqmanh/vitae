@@ -1,20 +1,16 @@
 import React from 'react'
-import styled from 'styled-components'
-
 import Section from './section'
 import Box from '../common/box'
 import ContentFrame from '../common/content-frame'
+import HorizontalRule from '../common/horizontal-rule'
 import profileInfo from '../../data/profile-info.json'
-import avatarImg from '../../static/avatar.jpg'
-
-const Avatar = styled.img`
-  max-width: 300px;
-  max-height: 300px;
-`
 
 const SideBar = () => (
   <Box className='px-0 pt-0 pb-3 pr-md-3' distributeX='right'>
-    <Avatar className='rounded-circle' src={avatarImg} width='100%' height='100%' />
+    <div>
+      <h2 className='text-light text-right mb-0'>PROFILE</h2>
+      <HorizontalRule />
+    </div>
   </Box>
 )
 

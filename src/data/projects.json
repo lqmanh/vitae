@@ -3,6 +3,11 @@
     "name": "Personal",
     "value": [
       {
+        "name": "automapper_dart",
+        "description": "A convention-based object-object mapper in Dart",
+        "url": "https://github.com/lqmanh/automapper_dart"
+      },
+      {
         "name": "directory-stat",
         "description": "Composable directory statistics fetcher where \"fs\" is insufficient",
         "url": "https://www.npmjs.com/package/directory-stat"
@@ -11,17 +16,17 @@
         "name": "LQM",
         "description": "Personal blog",
         "url": "https://lqm.now.sh"
-      },
-      {
-        "name": "Vitae",
-        "description": "Personal digital CV and more",
-        "url": "https://cvitae.now.sh"
       }
     ]
   },
   {
     "name": "Albert Team",
     "value": [
+      {
+        "name": "Night Watch",
+        "description": "Night Watch Project",
+        "url": "http://nightwat.ch"
+      },
       {
         "name": "Spiderman",
         "description": "Minimalistic web crawler for Node.js",
