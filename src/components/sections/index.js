@@ -1,9 +1,9 @@
-import Section from './section'
+import Achievements from './achievements'
 import Intro from './intro'
 import Profile from './profile'
+import Projects from './projects'
+import Section from './section'
 import Skills from './skills'
-import Achievements from './achievements'
-import Portfolio from './portfolio'
 
 export default Section
-export { Intro, Profile, Skills, Achievements, Portfolio }
+export { Achievements, Intro, Profile, Projects, Skills }

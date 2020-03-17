@@ -5,7 +5,7 @@ const sections = [
   { id: 'profile', name: 'Profile' },
   { id: 'achievements', name: 'Achievements' },
   { id: 'skills', name: 'Skills & Experience' },
-  { id: 'portfolio', name: 'Portfolio' }
+  { id: 'projects', name: 'Projects' }
 ]
 
 const ColoredText = styled.span`
