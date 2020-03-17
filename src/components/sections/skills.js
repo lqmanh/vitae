@@ -67,13 +67,13 @@ const SlideButton = styled.button`
 
 const SlidePrev = ({ previousSlide }) => (
   <SlideButton onClick={previousSlide}>
-    <ion-icon name='ios-arrow-back' />
+    <ion-icon name='arrow-back' />
   </SlideButton>
 )
 
 const SlideNext = ({ nextSlide }) => (
   <SlideButton onClick={nextSlide}>
-    <ion-icon name='ios-arrow-forward' />
+    <ion-icon name='arrow-forward' />
   </SlideButton>
 )
 

@@ -1,15 +1,11 @@
 [
   { "fieldName": "Full Name", "value": "Lương Quang Mạnh" },
   { "fieldName": "Date of Birth", "value": "May 8, 1998" },
+  { "fieldName": "Gender", "value": "Male" },
   { "fieldName": "Location", "value": "Hanoi, Vietnam" },
   {
     "fieldName": "Education",
-    "value": "University of Engineering & Technology (UET), Vietnam National University (VNU)"
+    "value": "University of Engineering & Technology, Vietnam National University"
   },
-  { "fieldName": "Occupation", "value": "Part-time employee at Teneocto Inc." },
-  { "fieldName": "Languages", "value": "Vietnamese, English" },
-  {
-    "fieldName": "Interests",
-    "value": "Computer science, technology, photography, music, cooking, writing, cinema,..."
-  }
+  { "fieldName": "Languages", "value": "Vietnamese, English" }
 ]

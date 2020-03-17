@@ -1,23 +1,21 @@
 {
   "fields": [
     [
-      { "x": "Database", "y": 50 },
-      { "x": "Mobile", "y": 15 },
+      { "x": "Database", "y": 35 },
       { "x": "Network Monitoring", "y": 20 },
-      { "x": "OS (Linux)", "y": 30 },
+      { "x": "OS (Linux)", "y": 35 },
       { "x": "Software Architecture", "y": 20 },
       { "x": "Web Crawling", "y": 85 },
-      { "x": "Web Backend", "y": 55 },
-      { "x": "Web Frontend", "y": 45 }
+      { "x": "Web Backend", "y": 60 },
+      { "x": "Web Frontend", "y": 40 }
     ]
   ],
   "langs": [
     [
-      { "x": "Dart", "y": 60 },
       { "x": "HTML & CSS", "y": 70 },
-      { "x": "JS/TS", "y": 70 },
+      { "x": "JavaScript", "y": 75 },
       { "x": "Python", "y": 60 },
-      { "x": "Rust", "y": 10 },
+      { "x": "Rust", "y": 15 },
       { "x": "SQL", "y": 25 }
     ]
   ]

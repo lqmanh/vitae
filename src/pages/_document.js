@@ -17,11 +17,11 @@ class MyDocument extends Document {
           <NextScript />
           <script
             type='module'
-            src='https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js'
+            src='https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js'
           />
           <script
             noModule=''
-            src='https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js'
+            src='https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js'
           />
         </body>
       </Html>
